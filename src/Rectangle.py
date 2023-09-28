@@ -13,8 +13,10 @@ class Rectangle(Figure):
         self.name = f"Rectangle {side_a} and {side_b}"
         print(f"side_a={self.side_a} side_b={self.side_b}")
 
+    @property
     def get_area(self):
         return self.side_a * self.side_b
 
+    @property
     def get_perimeter(self):
         return 2 * (self.side_a + self.side_b)
